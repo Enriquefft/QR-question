@@ -1,25 +1,16 @@
 "use client";
 
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardContent,
-  CardFooter,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 
-interface ConfirmationPageProps {
-  option: number;
-}
+const props = {
+  option: "KISS!!",
+};
 
 /**
- * @param props - The props of the confirmation page component.
- * @param props.option The option number that the user has chosen.
  * @returns The confirmation page component.
  */
-export default function ConfirmationPage(props: ConfirmationPageProps) {
+export default function ConfirmationPage() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-gradient-to-b from-yellow-400 via-red-500 to-purple-600">
       <Card className="mx-auto w-full max-w-md overflow-hidden rounded-xl bg-white/80 shadow-lg">
